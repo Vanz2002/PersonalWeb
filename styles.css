@@ -1,0 +1,114 @@
+* { 
+    box-sizing: border-box;
+    margin : 0;
+    padding : 0;
+}
+   html, body {
+    min-height: 100%;
+    background: #fff;
+    color: #000;
+}
+header{
+    background: #F21137;
+    padding: 50px;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Arvo', serif;
+    position: fixed;
+    width: 100%;
+    height: 200px;
+
+}
+.navbar{
+    display : flex;
+    justify-content: center;
+}
+nav a{
+    color : #000;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 15px;
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+main {
+padding-top: 200px;
+}
+.hero{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+article{
+    flex: 60%;
+    padding :20px;
+    font-size: 20px;
+    text-align: left;
+    align-self: center;
+}
+
+aside{
+    flex: 40%;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+
+
+.profile-photo {
+    height: 300px;
+    width: auto;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+
+.content-img {
+    height: 300px;
+    width: 45%;
+    object-fit: contain;
+    
+}
+
+@media screen and (max-width: 480px) {
+    .content-img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+
+
+.content-text {
+    padding: 20px;
+    width: 55%;
+    align-self: center;
+}
+
+
+@media screen and (max-width: 420px) {
+    .content-text {
+        width: 100%;
+    }
+}
+
+.content-text p {
+    margin-top: 20px;
+}
+
+footer {
+    height: 100px;
+    background: #030303;
+    padding: 30px;
+    justify-content: center;
+    color: white;
+    text-align: center;
+
+}
